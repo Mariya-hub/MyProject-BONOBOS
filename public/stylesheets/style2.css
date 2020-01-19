@@ -801,9 +801,10 @@ body div.pagecontent .filter-dropdown-menu .filter-dropdown-menu1 .dropdown .fil
   position: absolute;
   right: 0;
   top: 56px;
-  left: 300px;
+  left: 0;
   padding: 18px 18px;
   width: 500px;
+  display: none;
 }
 
 body div.pagecontent .filter-dropdown-menu .filter-dropdown-menu1 .dropdown .filter-options-length .length {

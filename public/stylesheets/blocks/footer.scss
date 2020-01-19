@@ -203,3 +203,9 @@ footer {
         }     
     }
 }
+@media (max-width: 992px) {
+    .header-top-adapt {
+        display: flex;
+        position: relative;
+    }
+}

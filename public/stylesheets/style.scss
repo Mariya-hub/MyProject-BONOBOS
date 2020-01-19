@@ -254,6 +254,221 @@ body {
                         }
                     }
                 }
+                .header-top-adapt {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    color: #000;
+                    z-index: 1;
+                    width: 100%;
+                    background-color: #fff;
+                    height: 50px;
+                    display: none;
+                    .header-top-adaptMenuSearch {
+                        display: flex;
+                        button.adaptMenu, button.adaptSearch{
+                            display: block;
+                            padding: 0 8px 0 8px;
+                            border: 0;
+                            background-color: #fff;
+                            position: relative;
+                            svg {
+                                width: 0.875em;
+                                font-size: 22px;
+                                height: 1em;
+                                color: #000;
+                                path {
+                                fill: #000;
+                                }
+                            }
+                        }
+                    }
+                    .nav-bar {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        position: fixed;
+                        height: 60px;
+                        top: 0;
+                        bottom: 0;
+                        height: 100%;
+                        width: 480px;
+                        color: #232323;
+                        background-color: #fff;
+                        transition: left .2s cubic-bezier(.645,.045,.355,1);
+                        align-items: center;
+                        overflow: scroll;
+                        display: none;
+                        .nav-bar-search {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            height: 60px;
+                            line-height: 60px;
+                            width: 100%;
+                            .nav-bar-searchIcon {
+                                top: 46px;
+                                left: 0;
+                                bottom: 0;
+                                padding: 0;
+                                border-right: 1px solid #e0dfdf;
+                                border-bottom: 1px solid #e0dfdf;
+                                width: 88%;
+                                svg {
+                                    width: 182px;
+                                    height: 20px;
+                                    font-size: 22px;
+                                    position: absolute;
+                                    left: -65px;
+                                    top: 19px;
+                                }
+                                input#search-input {
+                                    padding-left: 48px;
+                                    height: 59px;
+                                    background-color: #fff;
+                                    width: 100%;
+                                    border: 0;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                }
+                            }
+                            button.close {
+                                height: 60px;
+                                line-height: 60px;
+                                min-width: 50px;
+                                display: flex;
+                                font-weight: 600;
+                                font-size: 14px;
+                                border: none;
+                                padding: 0 16px;
+                                svg {
+                                    height: 20px;
+                                    width: 0.625em;
+                                    color: #707070;
+                                    font-size: 22px;
+                                    pointer-events: none;
+                                }
+                            }
+                        
+                        }
+                        .nav-bar-components {
+                            width: 100%;
+                            padding-bottom: 8px;
+                            background-color: #f4f4f4;
+                            border-top: 1px solid #e0dfdf;
+                            ul {
+                                margin: 0;
+                                padding: 0;
+                                list-style-type: none;
+                                li {
+                                    display: flex;
+                                    flex-direction: row;
+                                    font-size: 14px;
+                                    button {
+                                        display: flex;
+                                        align-items: center;
+                                        padding: 8px 16px;
+                                        width: 100%;
+                                        text-align: left;
+                                        min-height: 60px;
+                                        font-size: 16px;
+                                        color: #4c4c4c;
+                                        background-color: #fff;
+                                        border: none;
+                                        border-bottom: 1px solid #e0dfdf;
+                                        cursor: pointer;
+                                        .nav-bar-img {
+                                            img {
+                                                width: 50px;
+                                            height: 50px;
+                                            border-radius: 50%;
+                                            font-size: 16px;
+                                            }
+                                        }
+                                        span {
+                                            padding-left: 16px;
+                                            font-size: 16px;
+                                        }
+                                        svg {
+                                            width: 0.5em;
+                                            margin-left: auto;
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            } 
+                            .nav-bar-componentsBottom {
+                            width: 100%;
+                            ul {
+                                margin: 0;
+                                padding: 0;
+                                list-style-type: none;
+                                font-size: 14px;
+                                text-align: left;
+                                padding: 8px 16px;   
+                                li, .li-padding {
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    color: #333;
+                                    line-height: 1.5;
+                                    margin-top: 7px;
+                                    a {
+                                        color: #333;
+                                        padding: 16px 24px 0;
+                                        text-decoration: none;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                    }
+                                }
+                                li.li-padding {
+                                    padding-top: 16px;
+                                }
+                            }
+                        }
+                        }
+                    }
+                    .header-top-adaptTitle {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        svg {    
+                            width: 125px;
+                            height: 30px;
+                            margin-top: 0;
+                        }
+                    }
+                    .header-top-adaptSignIn {
+                        height: 100%;
+                        button.adaptSignIn {
+                            border: none;
+                            padding: 0 8px;
+                            border-radius: 0;
+                            background-color: #fff;
+                            height: 100%;
+                            a {
+                                text-decoration: none;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                color: #232323;
+                            }
+                        }
+                        .adaptBasket {
+                            border: 0;
+                            background-color: #fff;
+                            font-weight: 400;
+                            font-size: 21px;
+                            svg {
+                            width: 0.875em;
+                            height: 100%;
+                            }
+                        }
+                    }
+
+                }
                 .header-nav a:hover {
                     border-bottom: 1px solid #000;
                 }
@@ -302,6 +517,16 @@ body {
                     color: #000;
                 }
             }  
+            @media (max-width: 992px) {
+                .header-top-adapt {
+                    display: flex;
+                    position: relative;
+                }
+                .header-nav, .header-top {
+                    display: none;
+                }
+            }   
+
         } 
         header:hover > .header-top {
             background-color: #fff;
@@ -663,209 +888,5 @@ body {
             }
         }
     }
-    footer {
-        display: flex;
-        background-color: #232323;
-        padding: 48px 32px;
-        color: #fff;
-        .footer-social {
-            display: flex;
-            flex-direction: column;
-            width: 33%;
-            .footer-social-icons {
-                display: flex;
-                padding-bottom: 16px;
-                width: 100px;
-                justify-content: space-between;
-                a {
-                  font-size: 22px;
-                  width: 1em;
-                  color: #707070;
-                  .instagram {
-                    width: 0.875em;
-                  }
-                  .instagram:hover path {
-                      fill: #fff;
-                  }
-                  .facebook {
-                    width: 0.625em;
-                  }
-                  .facebook:hover path {
-                    fill: #fff;
-                  }
-                  .twitter {
-                    width: 1em;
-                  }
-                  .twitter:hover path {
-                    fill: #fff;
-                  }
-                  .youtube {
-                    width: 1.125em;
-                  }
-                  .youtube:hover path {
-                    fill: #fff;
-                  }
-                }
-            }  
-        .footer-social-blog {
-            display: grid;
-            grid-template-columns: 100px 70%;
-            grid-template-rows: 100px;
-            width: 100%;
-            img {
-                width: 100px;
-                min-width: 100px;
-                height: 100px;
-                display: block;
-                margin-right: 16px;
-
-            }
-            .guidbook {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                height: 100px;
-                box-sizing: border-box;
-                margin: 5px 16px;
-                
-                span {
-                    font-weight: 700;
-                    margin-bottom: 5px;
-                }
-                p {
-                    font-weight: 400;
-                    color: #c9c9c9;
-                    margin-bottom: 5px;
-                    font-style: normal;
-                    font-size: 14px;
-                    line-height: 1.5;
-                }
-                a {
-                    font-weight: 600;
-                    font-size: 14px;
-                    line-height: 1.5;
-                    margin-top: 8px;
-                    color: #fff;
-                    text-decoration: underline;
-                }
-
-            }
-        }
-    }
-        .footer-link {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            width: 33%;
-            div {
-                display: flex;
-                flex-direction: column;
-                flex-grow: 1;
-                a {
-                    margin: 8px 0;
-                    color: #f4f4f4;
-                    font-style: normal;
-                    font-weight: 700;
-                    text-transform: capitalize;
-                    font-size: 14px;
-                    line-height: 1.5;
-                }
-            }
-        }
-        .footer-email {
-            display: flex;
-            width: 33%;
-            position: relative;
-            form {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                #befirst {
-                    color: #f4f4f4;
-                    font-weight: 600;
-                    font-size: 18px;
-                    line-height: 1.5;
-                    margin-bottom: 8px;
-                }
-                p {
-                    color: #c9c9c9;
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 1.5;
-                }
-                .emailplus {
-                    display: flex;             
-                    input.form-control {
-                        position: relative;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 1.5;
-                        display: inline-block;
-                        text-transform: none;
-                        padding: 8px 10px;
-                        margin-top: 10px;
-                        height: 50px;
-                        border-radius: 0;
-                        width: 30vw;
-                        }
-                    label#emailaddress {
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 14px;
-                        color: #707070;
-                        margin-top: -60px;
-                        position: absolute;
-                        padding: 23px 0 0 12px;
-                        display: block;
-                    }
-                    button {
-                        border: 1px solid transparent;
-                        border-radius: 0;
-                        background: #4c4c4c;
-                        height: 50px;
-                        margin-top: 10px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        align-self: stretch;
-                        width: 100%;
-                        width: 50px;
-                        svg {
-                            width: 0.75em;
-                            overflow: visible;
-                        }
-
-                    }
-                    input.form-control:focus + label#emailaddress {
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 12px;
-                        color: #707070;
-                        margin-top: -63px;
-                        position: absolute;
-                        padding: 11px 0 0 12px;
-                        display: block;
-                        transition: all .1s ease-in-out;
-                    }
-                }
-                    div small {
-                        text-align: center;
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 12px;
-                        padding: 16px 0; 
-                        width: 80%;
-                        span {
-                            color: #c9c9c9;
-                            a {
-                                color: #c9c9c9;
-                                text-decoration: underline;
-                            }
-                        }
-                    
-                    }
-            }     
-        }
-    }
+@import 'blocks/footer';
 } 
