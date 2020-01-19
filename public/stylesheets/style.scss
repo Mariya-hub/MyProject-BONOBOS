@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    // position: relative;
+
         header {
             display: flex;
             flex-direction: column; 
@@ -23,9 +23,13 @@ body {
                             margin-bottom: 8px;
                             align-self: center;
                             font-weight: 600;
-                            font-size: 13px;
-                            line-height: 1.5;
                             padding-left: 24px;
+                            cursor: pointer;
+                            a {
+                                font-size: 13px;
+                                text-decoration: none;
+                                color: #fff;
+                            }
                     }
                     .header-title {
                         margin-left: 400px;
@@ -306,6 +310,9 @@ body {
             .header-title svg g {
                 fill: #000;
             }
+            .header-location a {
+                color: #000;
+            }
             .header-search-login-cart {
                 .search svg path {
                     stroke: #000;
@@ -560,6 +567,7 @@ body {
                         font-weight: 700;
                         text-transform: capitalize;
                         font-size: 14px;
+                        text-decoration: none;
                     }
                 }
 
@@ -584,7 +592,6 @@ body {
                         z-index: 1;
                         top: 52%;
                         left: 40%;
-                        transform: translateY(-50%);
                         background-color: #fff;
                         padding: 15px 24px;
                         color: rgb(83, 82, 82);
@@ -593,6 +600,7 @@ body {
                         font-weight: 700;
                         text-transform: capitalize;
                         font-size: 14px;
+                        text-decoration: none;
                     }
                 }
             }
@@ -612,7 +620,6 @@ body {
                         z-index: 1;
                         top: 52%;
                         left: 25%;
-                        transform: translateY(-50%);
                         background-color: #fff;
                         padding: 15px 24px;
                         color: rgb(83, 82, 82);
@@ -621,6 +628,7 @@ body {
                         font-weight: 700;
                         text-transform: capitalize;
                         font-size: 14px;
+                        text-decoration: none;
                     }
                 }
             }
@@ -676,14 +684,26 @@ body {
                   .instagram {
                     width: 0.875em;
                   }
+                  .instagram:hover path {
+                      fill: #fff;
+                  }
                   .facebook {
                     width: 0.625em;
+                  }
+                  .facebook:hover path {
+                    fill: #fff;
                   }
                   .twitter {
                     width: 1em;
                   }
+                  .twitter:hover path {
+                    fill: #fff;
+                  }
                   .youtube {
                     width: 1.125em;
+                  }
+                  .youtube:hover path {
+                    fill: #fff;
                   }
                 }
             }  

@@ -6,6 +6,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0;
 }
 
 body header {
@@ -16,7 +17,7 @@ body header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #fff;
+  color: #000;
   font-weight: 600;
   position: relative;
   width: 100%;
@@ -53,7 +54,7 @@ body header .header-top .header-location {
 body header .header-top .header-location a {
   font-size: 13px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 body header .header-top .header-title {
@@ -70,14 +71,14 @@ body header .header-top .header-title svg {
 }
 
 body header .header-top .header-title svg g {
-  fill: #fff;
+  fill: #000;
 }
 
 body header .header-top .header-search-login-cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #fff;
+  color: #000;
   -ms-flex-item-align: center;
       align-self: center;
   position: relative;
@@ -111,10 +112,18 @@ body header .header-top .header-search-login-cart .search svg {
   width: 1.5em;
 }
 
+body header .header-top .header-search-login-cart .search svg path {
+  stroke: #000;
+}
+
+body header .header-top .header-search-login-cart .search svg line {
+  stroke: #000;
+}
+
 body header .header-top .header-search-login-cart a {
   margin-top: 10px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
   margin-left: 15px;
 }
 
@@ -132,12 +141,12 @@ body header .header-top .header-search-login-cart .login .btn.btn-secondary.drop
   cursor: pointer;
   font-weight: 600;
   font-size: 13px;
-  color: #fff;
+  color: #000;
   background: rgba(255, 255, 255, 0);
 }
 
 body header .header-top .header-search-login-cart .login .dropdown-menu {
-  margin: 15px 43px 5px 0;
+  margin: 5px 43px 5px 0;
   border-radius: 0;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -162,6 +171,14 @@ body header .header-top .header-search-login-cart svg {
   margin-right: 15px;
 }
 
+body header .header-top .header-search-login-cart svg g {
+  stroke: #000;
+}
+
+body header .header-top .header-search-login-cart svg path {
+  stroke: #000;
+}
+
 body header .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,7 +188,7 @@ body header .header-nav {
           justify-content: center;
   margin: 50px 0 0 0;
   padding-top: 10px;
-  z-index: 1;
+  z-index: 5;
   list-style: none;
   position: relative;
   width: 100%;
@@ -188,9 +205,10 @@ body header .header-nav ul {
 
 body header .header-nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   padding: 0 10px;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 body header .header-nav ul .header-nav-menu {
@@ -201,7 +219,6 @@ body header .header-nav ul .header-nav-menu {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  z-index: 1;
   width: 100%;
   margin-left: -581px;
   background-color: #fff;
@@ -404,245 +421,7 @@ body header .header-nav a.a-finalsale:hover + .header-nav-menu.alignblock8 {
   display: flex;
 }
 
-body header header:hover .header-nav {
-  content: '';
-  background-color: #fff;
-}
-
-body header header:hover .header-nav a {
-  color: #000;
-}
-
-body header:hover > .header-top {
-  background-color: #fff;
-  -webkit-transition: color .3s,background-color .3s;
-  transition: color .3s,background-color .3s;
-  color: #000;
-}
-
-body header:hover > .header-top .header-title svg g {
-  fill: #000;
-}
-
-body header:hover > .header-top .header-location a {
-  color: #000;
-}
-
-body header:hover > .header-top .header-search-login-cart .search svg path {
-  stroke: #000;
-  color: #000;
-}
-
-body header:hover > .header-top .header-search-login-cart .search {
-  color: #000;
-}
-
-body header:hover > .header-top .header-search-login-cart .search svg line {
-  stroke: #000;
-}
-
-body header:hover > .header-top .header-search-login-cart a {
-  color: #000;
-}
-
-body header:hover > .header-top .header-search-login-cart .btn.btn-secondary.dropdown-toggle {
-  color: #000;
-}
-
-body header:hover > .header-top .header-search-login-cart div.cart svg g path {
-  stroke: #000;
-}
-
-body header:hover > .header-top .header-search-login-cart div.cart svg path {
-  stroke: #000;
-  color: #000;
-}
-
-body header:hover > .header-nav {
-  background-color: #fff;
-  -webkit-transition: color .3s,background-color .3s;
-  transition: color .3s,background-color .3s;
-}
-
-body header:hover > .header-nav a {
-  color: #000;
-}
-
-body .carousel.slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-body .carousel.slide .carousel-inner {
-  position: relative;
-}
-
-body .carousel.slide .carousel-inner .circle-slide-button {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 50px;
-      grid-template-rows: 50px;
-  -ms-grid-columns: 5% 10% 85%;
-      grid-template-columns: 5% 10% 85%;
-  z-index: 1;
-  position: relative;
-  margin-top: 40%;
-}
-
-body .carousel.slide .carousel-inner .circle-slide-button .circle {
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-body .carousel.slide .carousel-inner .circle-slide-button .circle svg {
-  height: 35px;
-  position: absolute;
-  color: #fff;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: circle;
-          animation-name: circle;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
-
-@-webkit-keyframes circle {
-  from {
-    margin-top: 0;
-  }
-  to {
-    margin-top: 10px;
-  }
-}
-
-@keyframes circle {
-  from {
-    margin-top: 0;
-  }
-  to {
-    margin-top: 10px;
-  }
-}
-
-body .carousel.slide .carousel-inner .circle-slide-button .explore {
-  -ms-grid-column-align: start;
-      justify-self: start;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  color: #fff;
-}
-
-body .carousel.slide .carousel-inner .circle-slide-button .explore span {
-  font-family: 'PT Sans Caption', sans-serif;
-  font-size: 12px;
-  font-weight: 800;
-}
-
-body .carousel.slide .carousel-inner .circle-slide-button .buttons {
-  -ms-grid-column-align: end;
-      justify-self: end;
-  margin: 10px 30px;
-}
-
-body .carousel.slide .carousel-inner .circle-slide-button .buttons button {
-  border-radius: 50%;
-  height: 12px;
-  border: 1px solid #fff;
-  margin-left: 5px;
-  background: rgba(255, 255, 255, 0);
-}
-
-body .carousel.slide .carousel-inner .circle-slide-button .buttons .btnslider1 {
-  background: #707070;
-}
-
-body .carousel.slide .carousel-item.active {
-  width: 100%;
-}
-
-body .carousel.slide .carousel-item.active img {
-  width: 100%;
-}
-
-body .carousel.slide .carousel1 section {
-  position: absolute;
-  top: 40%;
-  left: 60%;
-  font-family: 'Archivo Black', sans-serif;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 1.2;
-  color: #fff;
-  text-align: center;
-}
-
-body .carousel.slide .carousel1 section div.btn {
-  margin: 15px;
-  padding: 15px 24px;
-  background-color: #fff;
-  border-radius: 0;
-}
-
-body .carousel.slide .carousel1 section div.btn a {
-  text-decoration: none;
-  font-family: 'PT Sans Caption', sans-serif;
-  font-weight: 600;
-  color: #000;
-  font-size: 14px;
-  color: #535252;
-}
-
-body .carousel.slide .carousel3 .carousel3-content {
-  position: absolute;
-  text-align: center;
-  top: 35%;
-  left: 30%;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 1.3;
-  color: #fff;
-  cursor: pointer;
-}
-
-body .carousel.slide .carousel3 .carousel3-content div {
-  margin-top: 5px;
-}
-
-body .carousel.slide .carousel3 .carousel3-content div a {
-  text-decoration: none;
-  font-family: 'PT Sans Caption', sans-serif;
-  font-weight: 600;
-  color: #000;
-  font-size: 14px;
-  background-color: #fff;
-  padding: 15px 24px;
-  color: #535252;
-}
-
-body .carousel.slide .carousel-control-prev {
-  margin: 100px 0;
-}
-
-body .carousel.slide .carousel-control-next {
-  margin: 100px 0;
-}
-
-body .carousel.slide a.carousel-control-next:focus + div.circle-slide-button button.btnslider1 {
-  background: rgba(255, 255, 255, 0);
-}
-
-body .carousel.slide a.carousel-control-next:focus + div.circle-slide-button button.btnslider2 {
-  background: #707070;
-}
-
-body .img-components {
-  margin-top: 40%;
+body .sections {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -650,158 +429,239 @@ body .img-components {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-negative: 2;
-      flex-shrink: 2;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  min-height: 100vh;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body .img-components .img-component1 {
+body .sections .container1, body .sections .container4, body .sections .container7 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 16px 0;
-}
-
-body .img-components .img-component1 div {
-  display: block;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  min-height: 180px;
-  width: calc(33% - 8px);
-}
-
-body .img-components .img-component1 div img {
-  display: block;
-  width: 100%;
-}
-
-body .img-components .img-component1 div a {
-  position: absolute;
-  z-index: 1;
-  top: 52%;
-  left: 35%;
-  background-color: #fff;
-  padding: 15px 24px;
-  color: #535252;
-  font-family: 'PT Sans Caption', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: capitalize;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-body .img-components .img-component2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 0 16px;
-}
-
-body .img-components .img-component2 div {
-  display: block;
-  width: 100%;
-  min-height: 180px;
-  position: relative;
-  text-align: center;
-  width: calc(50% - 8px);
-}
-
-body .img-components .img-component2 div img {
-  display: block;
-  width: 100%;
-}
-
-body .img-components .img-component2 div a {
-  position: absolute;
-  z-index: 1;
-  top: 52%;
-  left: 40%;
-  background-color: #fff;
-  padding: 15px 24px;
-  color: #535252;
-  font-family: 'PT Sans Caption', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: capitalize;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-body .img-components .img-component3 div {
-  display: block;
-  min-height: 180px;
   position: relative;
   text-align: center;
   width: 100%;
 }
 
-body .img-components .img-component3 div img {
-  display: block;
+body .sections .container1 .container-component-img img, body .sections .container4 .container-component-img img, body .sections .container7 .container-component-img img {
   width: 100%;
 }
 
-body .img-components .img-component3 div a {
+body .sections .container1 .container-component-title, body .sections .container4 .container-component-title, body .sections .container7 .container-component-title {
   position: absolute;
-  z-index: 1;
-  top: 52%;
+  top: 50%;
   left: 25%;
-  background-color: #fff;
-  padding: 15px 24px;
-  color: #535252;
-  font-family: 'PT Sans Caption', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: capitalize;
-  font-size: 14px;
-  text-decoration: none;
+  width: 50%;
+  color: #fff;
+  font-weight: 900;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  text-align: center;
 }
 
-body .details {
+body .sections .container2, body .sections .container5, body .sections .container8 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+body .sections .container2 .container-component-left, body .sections .container5 .container-component-left, body .sections .container8 .container-component-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+body .sections .container2 .container-component-left img, body .sections .container5 .container-component-left img, body .sections .container8 .container-component-left img {
+  width: 100%;
+  height: 100%;
+}
+
+body .sections .container2 .container-component-right, body .sections .container5 .container-component-right, body .sections .container8 .container-component-right {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   text-align: center;
-  margin: 16px 0;
 }
 
-body .details .detail {
-  padding: 24px;
-  width: 40%;
-  margin: 0 auto;
-}
-
-body .details .detail span {
-  font-weight: 500;
+body .sections .container2 .container-component-right p, body .sections .container5 .container-component-right p, body .sections .container8 .container-component-right p {
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
-  color: #232323;
-  margin-bottom: 24px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
-body .details .detail p {
-  font-style: normal;
+body .sections .container2 .container-component-right a.container-component-button, body .sections .container5 .container-component-right a.container-component-button, body .sections .container8 .container-component-right a.container-component-button {
+  background-color: #000;
   font-size: 14px;
-  line-height: 1.5;
-  margin: 20px 0;
+  color: #fff;
+  padding: 15px 40px;
+  text-decoration: none;
 }
 
-body .details .detail a {
-  font-weight: 700;
-  color: #232323;
+body .sections .container2 .container-component-right a.container-component-button:hover, body .sections .container5 .container-component-right a.container-component-button:hover, body .sections .container8 .container-component-right a.container-component-button:hover {
+  background-color: #232323;
+}
+
+body .sections .container3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-top: 15px;
+  width: 100%;
+}
+
+body .sections .container3 p {
   font-style: normal;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 18px;
+  padding-top: 25px;
+}
+
+body .sections .container3 img {
+  width: 100%;
+}
+
+body .sections .container5 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  background-color: #fff;
+}
+
+body .sections .container6, body .sections .container9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+
+body .sections .container6 .container-component-titleDetails h2, body .sections .container9 .container-component-titleDetails h2 {
+  font-size: 1.5em;
+}
+
+body .sections .container6 .container-component-detailswrapper, body .sections .container9 .container-component-detailswrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .sections .container6 .container-component-detailswrapper .container-component-details, body .sections .container9 .container-component-detailswrapper .container-component-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-flex: 33.33%;
+      -ms-flex: 33.33%;
+          flex: 33.33%;
+}
+
+body .sections .container6 .container-component-detailswrapper .container-component-details .component-detail-icon, body .sections .container9 .container-component-detailswrapper .container-component-details .component-detail-icon {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+body .sections .container6 .container-component-detailswrapper .container-component-details .component-detail-icon svg.iconOverlay, body .sections .container9 .container-component-detailswrapper .container-component-details .component-detail-icon svg.iconOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+}
+
+body .sections .container6 .container-component-detailswrapper .container-component-details h3.container-component-headingDetails, body .sections .container9 .container-component-detailswrapper .container-component-details h3.container-component-headingDetails {
+  padding: 15px 0 30px;
+  font-size: 1.17em;
+}
+
+body .sections .container6 .container-component-detailswrapper .container-component-details p, body .sections .container9 .container-component-detailswrapper .container-component-details p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+body .sections .container8 {
+  background-color: #fff;
+}
+
+body .sections .container8 p.container8-component-right-heading {
+  font-size: 150px;
+  font-weight: 600;
+  text-align: center;
+}
+
+body .sections .container8 p.container8-component-right-locations {
+  font-size: 38px;
+  font-weight: 600;
+  margin-top: -45px;
+}
+
+body .sections .container8 a.container-component-button {
+  margin-top: 10px;
+}
+
+body .sections .container9 a.container9-component-button {
+  background-color: #000;
+  font-size: 14px;
+  color: #fff;
+  padding: 15px 40px;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+body .sections .container9 a.container9-component-button:hover {
+  background-color: #232323;
 }
 
 body footer {
@@ -1088,4 +948,4 @@ body footer .footer-email form div small span a {
   color: #c9c9c9;
   text-decoration: underline;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style3.css.map */
