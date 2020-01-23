@@ -179,7 +179,11 @@ footer .footer-email form {
   width: 100%;
 }
 
-footer .footer-email form #befirst {
+footer .footer-email form .form-group {
+  width: 100%;
+}
+
+footer .footer-email form .form-group #befirst {
   color: #f4f4f4;
   font-weight: 600;
   font-size: 18px;
@@ -187,7 +191,7 @@ footer .footer-email form #befirst {
   margin-bottom: 8px;
 }
 
-footer .footer-email form p {
+footer .footer-email form .form-group p {
   color: #c9c9c9;
   font-style: normal;
   font-weight: 400;
@@ -195,13 +199,18 @@ footer .footer-email form p {
   line-height: 1.5;
 }
 
-footer .footer-email form .emailplus {
+footer .footer-email form .form-group .emailplus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
-footer .footer-email form .emailplus input.form-control {
+footer .footer-email form .form-group .emailplus div {
+  width: 100%;
+}
+
+footer .footer-email form .form-group .emailplus div input.form-control {
   position: relative;
   font-style: normal;
   font-weight: 400;
@@ -212,10 +221,10 @@ footer .footer-email form .emailplus input.form-control {
   margin-top: 10px;
   height: 50px;
   border-radius: 0;
-  width: 30vw;
+  width: 180%;
 }
 
-footer .footer-email form .emailplus label#emailaddress {
+footer .footer-email form .form-group .emailplus div label#emailaddress {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -226,12 +235,13 @@ footer .footer-email form .emailplus label#emailaddress {
   display: block;
 }
 
-footer .footer-email form .emailplus button {
+footer .footer-email form .form-group .emailplus div button {
   border: 1px solid transparent;
   border-radius: 0;
   background: #4c4c4c;
   height: 50px;
   margin-top: 10px;
+  margin-left: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,16 +253,15 @@ footer .footer-email form .emailplus button {
           align-items: center;
   -ms-flex-item-align: stretch;
       align-self: stretch;
-  width: 100%;
   width: 50px;
 }
 
-footer .footer-email form .emailplus button svg {
+footer .footer-email form .form-group .emailplus div button svg {
   width: 0.75em;
   overflow: visible;
 }
 
-footer .footer-email form .emailplus input.form-control:focus + label#emailaddress {
+footer .footer-email form .form-group .emailplus div input.form-control:focus + label#emailaddress {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -265,7 +274,7 @@ footer .footer-email form .emailplus input.form-control:focus + label#emailaddre
   transition: all .1s ease-in-out;
 }
 
-footer .footer-email form div small {
+footer .footer-email form .form-group div small {
   text-align: center;
   font-style: normal;
   font-weight: 400;
@@ -274,21 +283,56 @@ footer .footer-email form div small {
   width: 80%;
 }
 
-footer .footer-email form div small span {
+footer .footer-email form .form-group div small span {
   color: #c9c9c9;
 }
 
-footer .footer-email form div small span a {
+footer .footer-email form .form-group div small span a {
   color: #c9c9c9;
   text-decoration: underline;
 }
 
 @media (max-width: 992px) {
-  .header-top-adapt {
+  footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 24px 32px;
+  }
+  footer .footer-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0 0 24px;
+    border-bottom: 1px solid #c9c9c9;
+    margin-top: 0;
+  }
+  footer .footer-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #c9c9c9;
+    padding: 16px 0;
+  }
+  footer .footer-email {
+    width: 100%;
+    padding: 24px 0 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+  }
+  footer .footer-email form .form-group .emailplus input.form-control {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=footer.css.map */

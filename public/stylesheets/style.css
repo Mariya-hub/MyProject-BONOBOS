@@ -223,10 +223,8 @@ body header .header-nav ul .header-nav-menu .menu-a {
 }
 
 body header .header-nav ul .header-nav-menu .menu-a a {
-  padding: 8px 0;
-  text-decoration: none;
+  margin: 8px 0;
   color: #000;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
 }
@@ -271,8 +269,7 @@ body header .header-nav ul .menu1-a h3 {
 }
 
 body header .header-nav ul .menu1-a a {
-  padding: 8px 0;
-  text-decoration: none;
+  margin: 8px 0;
   color: #000;
   font-style: normal;
   font-weight: 400;
@@ -382,7 +379,7 @@ body header .header-top-adapt .header-top-adaptMenuSearch button.adaptMenu svg p
   fill: #000;
 }
 
-body header .header-top-adapt .nav-bar {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,8 +391,10 @@ body header .header-top-adapt .nav-bar {
       -ms-flex-pack: start;
           justify-content: flex-start;
   position: fixed;
+  z-index: 3;
   height: 60px;
   top: 0;
+  left: 0;
   bottom: 0;
   height: 100%;
   width: 480px;
@@ -410,7 +409,7 @@ body header .header-top-adapt .nav-bar {
   display: none;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-search {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,7 +425,7 @@ body header .header-top-adapt .nav-bar .nav-bar-search {
   width: 100%;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-search .nav-bar-searchIcon {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-search .nav-bar-searchIcon {
   top: 46px;
   left: 0;
   bottom: 0;
@@ -436,7 +435,7 @@ body header .header-top-adapt .nav-bar .nav-bar-search .nav-bar-searchIcon {
   width: 88%;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-search .nav-bar-searchIcon svg {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-search .nav-bar-searchIcon svg {
   width: 182px;
   height: 20px;
   font-size: 22px;
@@ -445,7 +444,7 @@ body header .header-top-adapt .nav-bar .nav-bar-search .nav-bar-searchIcon svg {
   top: 19px;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-search .nav-bar-searchIcon input#search-input {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-search .nav-bar-searchIcon input#search-input {
   padding-left: 48px;
   height: 59px;
   background-color: #fff;
@@ -456,7 +455,7 @@ body header .header-top-adapt .nav-bar .nav-bar-search .nav-bar-searchIcon input
   font-weight: 400;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-search button.close {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-search button.close {
   height: 60px;
   line-height: 60px;
   min-width: 50px;
@@ -469,7 +468,7 @@ body header .header-top-adapt .nav-bar .nav-bar-search button.close {
   padding: 0 16px;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-search button.close svg {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-search button.close svg {
   height: 20px;
   width: 0.625em;
   color: #707070;
@@ -477,20 +476,20 @@ body header .header-top-adapt .nav-bar .nav-bar-search button.close svg {
   pointer-events: none;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-components {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-components {
   width: 100%;
   padding-bottom: 8px;
   background-color: #f4f4f4;
   border-top: 1px solid #e0dfdf;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-components ul {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-components ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-components ul li {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-components ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,7 +500,7 @@ body header .header-top-adapt .nav-bar .nav-bar-components ul li {
   font-size: 14px;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-components ul li button {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-components ul li button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,29 +519,29 @@ body header .header-top-adapt .nav-bar .nav-bar-components ul li button {
   cursor: pointer;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-components ul li button .nav-bar-img img {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-components ul li button .nav-bar-img img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   font-size: 16px;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-components ul li button span {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-components ul li button span {
   padding-left: 16px;
   font-size: 16px;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-components ul li button svg {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-components ul li button svg {
   width: 0.5em;
   margin-left: auto;
   font-size: 16px;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-components .nav-bar-componentsBottom {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-components .nav-bar-componentsBottom {
   width: 100%;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-components .nav-bar-componentsBottom ul {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-components .nav-bar-componentsBottom ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -551,7 +550,7 @@ body header .header-top-adapt .nav-bar .nav-bar-components .nav-bar-componentsBo
   padding: 8px 16px;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-components .nav-bar-componentsBottom ul li, body header .header-top-adapt .nav-bar .nav-bar-components .nav-bar-componentsBottom ul .li-padding {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-components .nav-bar-componentsBottom ul li, body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-components .nav-bar-componentsBottom ul .li-padding {
   font-weight: 400;
   font-size: 16px;
   color: #333;
@@ -559,7 +558,7 @@ body header .header-top-adapt .nav-bar .nav-bar-components .nav-bar-componentsBo
   margin-top: 7px;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-components .nav-bar-componentsBottom ul li a, body header .header-top-adapt .nav-bar .nav-bar-components .nav-bar-componentsBottom ul .li-padding a {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-components .nav-bar-componentsBottom ul li a, body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-components .nav-bar-componentsBottom ul .li-padding a {
   color: #333;
   padding: 16px 24px 0;
   text-decoration: none;
@@ -568,7 +567,7 @@ body header .header-top-adapt .nav-bar .nav-bar-components .nav-bar-componentsBo
   font-size: 16px;
 }
 
-body header .header-top-adapt .nav-bar .nav-bar-components .nav-bar-componentsBottom ul li.li-padding {
+body header .header-top-adapt .header-top-adaptMenuSearch .nav-bar .nav-bar-components .nav-bar-componentsBottom ul li.li-padding {
   padding-top: 16px;
 }
 
@@ -621,66 +620,66 @@ body header .header-top-adapt .header-top-adaptSignIn .adaptBasket svg {
 }
 
 body header .header-nav a:hover {
-  border-bottom: 1px solid #000;
+  text-decoration: underline;
 }
 
-body header .header-nav a.a-new:hover + .header-nav-menu {
+body header .header-nav li.nv-new:hover > .header-nav-menu {
   content: '';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header .header-nav a.a-clothing:hover + .header-nav-menu.alignblock1 {
+body header .header-nav .nv-clothing:hover > .header-nav-menu.alignblock1 {
   content: '';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header .header-nav a.a-pantsjeans:hover + .header-nav-menu.alignblock2 {
+body header .header-nav .nv-pantsjeans:hover > .header-nav-menu.alignblock2 {
   content: '';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header .header-nav a.a-shirts:hover + .header-nav-menu.alignblock3 {
+body header .header-nav .nv-shirts:hover > .header-nav-menu.alignblock3 {
   content: '';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header .header-nav a.a-sweatersouterwear:hover + .header-nav-menu.alignblock4 {
+body header .header-nav .nv-sweetersouterwear:hover > .header-nav-menu.alignblock4 {
   content: '';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header .header-nav a.a-suitsblazers:hover + .header-nav-menu.alignblock5 {
+body header .header-nav .nv-suitsblazers:hover > .header-nav-menu.alignblock5 {
   content: '';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header .header-nav a.a-golf:hover + .header-nav-menu.alignblock6 {
+body header .header-nav .nv-golf:hover > .header-nav-menu.alignblock6 {
   content: '';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header .header-nav a.a-accessories:hover + .header-nav-menu.alignblock7 {
+body header .header-nav .nv-accessories:hover > .header-nav-menu.alignblock7 {
   content: '';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header .header-nav a.a-finalsale:hover + .header-nav-menu.alignblock8 {
+body header .header-nav .nv-finalsale:hover > .header-nav-menu.alignblock8 {
   content: '';
   display: -webkit-box;
   display: -ms-flexbox;
@@ -702,6 +701,16 @@ body header header:hover .header-nav a {
     display: -ms-flexbox;
     display: flex;
     position: relative;
+  }
+  body header .header-top-adapt button.adaptSearch:focus + div.nav-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body header .header-top-adapt button.adaptMenu:focus ~ div.nav-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   body header .header-nav, body header .header-top {
     display: none;
@@ -806,6 +815,12 @@ body .carousel.slide .carousel-inner .circle-slide-button .circle svg {
           animation-timing-function: ease-in-out;
 }
 
+@media (max-width: 992px) {
+  body .carousel.slide .carousel-inner .circle-slide-button .circle svg {
+    height: 23px;
+  }
+}
+
 @-webkit-keyframes circle {
   from {
     margin-top: 0;
@@ -831,6 +846,14 @@ body .carousel.slide .carousel-inner .circle-slide-button .explore {
       -ms-grid-row-align: center;
       align-self: center;
   color: #fff;
+}
+
+@media (max-width: 992px) {
+  body .carousel.slide .carousel-inner .circle-slide-button .explore {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 5px 0 0 5px;
+  }
 }
 
 body .carousel.slide .carousel-inner .circle-slide-button .explore span {
@@ -951,6 +974,8 @@ body .img-components {
       -ms-flex-positive: 2;
           flex-grow: 2;
   min-height: 100vh;
+  position: relative;
+  z-index: -1;
 }
 
 body .img-components .img-component1 {
@@ -979,7 +1004,7 @@ body .img-components .img-component1 div img {
 
 body .img-components .img-component1 div a {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 52%;
   left: 35%;
   background-color: #fff;
@@ -1280,7 +1305,11 @@ body footer .footer-email form {
   width: 100%;
 }
 
-body footer .footer-email form #befirst {
+body footer .footer-email form .form-group {
+  width: 100%;
+}
+
+body footer .footer-email form .form-group #befirst {
   color: #f4f4f4;
   font-weight: 600;
   font-size: 18px;
@@ -1288,7 +1317,7 @@ body footer .footer-email form #befirst {
   margin-bottom: 8px;
 }
 
-body footer .footer-email form p {
+body footer .footer-email form .form-group p {
   color: #c9c9c9;
   font-style: normal;
   font-weight: 400;
@@ -1296,13 +1325,18 @@ body footer .footer-email form p {
   line-height: 1.5;
 }
 
-body footer .footer-email form .emailplus {
+body footer .footer-email form .form-group .emailplus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
-body footer .footer-email form .emailplus input.form-control {
+body footer .footer-email form .form-group .emailplus div {
+  width: 100%;
+}
+
+body footer .footer-email form .form-group .emailplus div input.form-control {
   position: relative;
   font-style: normal;
   font-weight: 400;
@@ -1313,10 +1347,10 @@ body footer .footer-email form .emailplus input.form-control {
   margin-top: 10px;
   height: 50px;
   border-radius: 0;
-  width: 30vw;
+  width: 180%;
 }
 
-body footer .footer-email form .emailplus label#emailaddress {
+body footer .footer-email form .form-group .emailplus div label#emailaddress {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1327,12 +1361,13 @@ body footer .footer-email form .emailplus label#emailaddress {
   display: block;
 }
 
-body footer .footer-email form .emailplus button {
+body footer .footer-email form .form-group .emailplus div button {
   border: 1px solid transparent;
   border-radius: 0;
   background: #4c4c4c;
   height: 50px;
   margin-top: 10px;
+  margin-left: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1344,16 +1379,15 @@ body footer .footer-email form .emailplus button {
           align-items: center;
   -ms-flex-item-align: stretch;
       align-self: stretch;
-  width: 100%;
   width: 50px;
 }
 
-body footer .footer-email form .emailplus button svg {
+body footer .footer-email form .form-group .emailplus div button svg {
   width: 0.75em;
   overflow: visible;
 }
 
-body footer .footer-email form .emailplus input.form-control:focus + label#emailaddress {
+body footer .footer-email form .form-group .emailplus div input.form-control:focus + label#emailaddress {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1366,7 +1400,7 @@ body footer .footer-email form .emailplus input.form-control:focus + label#email
   transition: all .1s ease-in-out;
 }
 
-body footer .footer-email form div small {
+body footer .footer-email form .form-group div small {
   text-align: center;
   font-style: normal;
   font-weight: 400;
@@ -1375,21 +1409,56 @@ body footer .footer-email form div small {
   width: 80%;
 }
 
-body footer .footer-email form div small span {
+body footer .footer-email form .form-group div small span {
   color: #c9c9c9;
 }
 
-body footer .footer-email form div small span a {
+body footer .footer-email form .form-group div small span a {
   color: #c9c9c9;
   text-decoration: underline;
 }
 
 @media (max-width: 992px) {
-  body .header-top-adapt {
+  body footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 24px 32px;
+  }
+  body footer .footer-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0 0 24px;
+    border-bottom: 1px solid #c9c9c9;
+    margin-top: 0;
+  }
+  body footer .footer-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #c9c9c9;
+    padding: 16px 0;
+  }
+  body footer .footer-email {
+    width: 100%;
+    padding: 24px 0 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+  }
+  body footer .footer-email form .form-group .emailplus input.form-control {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

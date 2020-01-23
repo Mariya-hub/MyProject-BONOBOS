@@ -153,10 +153,8 @@ body {
                                     text-align: right;
                                     border-right: 1px solid #e5e5e5;
                                     a {
-                                        padding: 8px 0;
-                                        text-decoration: none;
+                                        margin: 8px 0;
                                         color: #000;
-                                        font-style: normal;
                                         font-weight: 400;
                                         font-size: 14px;
                                     }
@@ -194,8 +192,7 @@ body {
                                         color: #000;
                                     }
                                     a {
-                                        padding: 8px 0;
-                                        text-decoration: none;
+                                        margin: 8px 0;
                                         color: #000;
                                         font-style: normal;
                                         font-weight: 400;
@@ -283,14 +280,16 @@ body {
                                 }
                             }
                         }
-                    }
-                    .nav-bar {
+                    
+                        .nav-bar {
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-start;
                         position: fixed;
+                        z-index: 3;
                         height: 60px;
                         top: 0;
+                        left: 0;
                         bottom: 0;
                         height: 100%;
                         width: 480px;
@@ -429,7 +428,10 @@ body {
                             }
                         }
                         }
+                        }
+
                     }
+                  
                     .header-top-adaptTitle {
                         display: flex;
                         align-items: center;
@@ -470,42 +472,42 @@ body {
 
                 }
                 .header-nav a:hover {
-                    border-bottom: 1px solid #000;
+                    text-decoration: underline;
                 }
-                .header-nav a.a-new:hover + .header-nav-menu {
+                .header-nav li.nv-new:hover > .header-nav-menu {
                         content: '';
                         display: flex;
                     }
-                .header-nav a.a-clothing:hover + .header-nav-menu.alignblock1 {
+                .header-nav .nv-clothing:hover > .header-nav-menu.alignblock1 {
                     content: '';
                     display: flex;
                     
                 }
-                .header-nav a.a-pantsjeans:hover + .header-nav-menu.alignblock2 {
+                .header-nav .nv-pantsjeans:hover > .header-nav-menu.alignblock2 {
                     content: '';
                     display: flex;
                 }
-                .header-nav a.a-shirts:hover + .header-nav-menu.alignblock3 {
+                .header-nav .nv-shirts:hover > .header-nav-menu.alignblock3 {
                     content: '';
                     display: flex;
                 }
-                .header-nav a.a-sweatersouterwear:hover + .header-nav-menu.alignblock4 {
+                .header-nav .nv-sweetersouterwear:hover > .header-nav-menu.alignblock4 {
                     content: '';
                     display: flex;
                 }
-                .header-nav a.a-suitsblazers:hover + .header-nav-menu.alignblock5 {
+                .header-nav .nv-suitsblazers:hover > .header-nav-menu.alignblock5 {
                     content: '';
                     display: flex;
                 }
-                .header-nav a.a-golf:hover + .header-nav-menu.alignblock6 {
+                .header-nav .nv-golf:hover > .header-nav-menu.alignblock6 {
                     content: '';
                     display: flex;
                 }
-                .header-nav a.a-accessories:hover + .header-nav-menu.alignblock7 {
+                .header-nav .nv-accessories:hover > .header-nav-menu.alignblock7 {
                     content: '';
                     display: flex;
                 }
-                .header-nav a.a-finalsale:hover + .header-nav-menu.alignblock8 {
+                .header-nav .nv-finalsale:hover > .header-nav-menu.alignblock8 {
                     content: '';
                     display: flex;
                 }
@@ -520,7 +522,13 @@ body {
             @media (max-width: 992px) {
                 .header-top-adapt {
                     display: flex;
-                    position: relative;
+                    position: relative;         
+                    button.adaptSearch:focus + div.nav-bar {
+                        display: flex;
+                    }
+                    button.adaptMenu:focus ~ div.nav-bar {
+                        display: flex;
+                    }
                 }
                 .header-nav, .header-top {
                     display: none;
@@ -597,6 +605,9 @@ body {
                                     animation-iteration-count: infinite;
                                     animation-direction: alternate;
                                     animation-timing-function: ease-in-out;
+                                    @media (max-width: 992px) {
+                                        height: 23px;
+                                    }
                                 }
                                 @keyframes circle {
                                     from { margin-top: 0; }
@@ -607,6 +618,10 @@ body {
                                 justify-self: start;
                                 align-self: center;
                                 color: #fff;
+                                @media (max-width: 992px) {
+                                    align-self: flex-start;
+                                    margin: 5px 0 0 5px;
+                                }
                                 span {
                                     font-family: 'PT Sans Caption', sans-serif;
                                     font-size: 12px;
@@ -764,6 +779,8 @@ body {
             flex-shrink: 2;
             flex-grow: 2;
             min-height: 100vh;
+            position: relative;
+            z-index: -1;
             .img-component1 {
                 display: flex;
                 justify-content: space-between;
@@ -781,7 +798,7 @@ body {
                     }
                     a {
                         position: absolute;
-                        z-index: 1;
+                        z-index: 2;
                         top: 52%;
                         left: 35%;
                         background-color: #fff;
@@ -888,5 +905,5 @@ body {
             }
         }
     }
-@import 'blocks/footer';
+    @import 'blocks/footer';
 } 
