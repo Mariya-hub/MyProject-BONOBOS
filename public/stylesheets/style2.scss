@@ -344,6 +344,7 @@ body {
                 button.dropdown-button:focus + .filter-options-length {
                     display: flex;
                 }
+                
             }
             .filter-dropdown-menu2 { 
                 margin-top: 12px;  
@@ -1019,18 +1020,30 @@ body {
                     width: 100%;
                     margin: 0;
                     padding: 0; 
+                    
+                    
                     .card {
                         padding-left: 0;
                         padding-right: 0;
-                        width: 32%;
+                        // width: 32%;
+                        max-width: 540px;
+                        flex: 0 0 32%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
                         a {
                             padding: 0;
                             margin: 0;
                             width: 100%;
                         }
-                    
-                    }
+                        @media (max-width: 540px) {
+                            padding: 0 0 32px;
+                            flex: 0 0 49%;
+                        }
+                    }  
                 }
+               
             }
         }
     }

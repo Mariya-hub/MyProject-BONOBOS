@@ -309,8 +309,11 @@ footer .footer-email form .form-group div small span a {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    padding: 0 0 24px;
+    padding: 0 0 60px;
     border-bottom: 1px solid #c9c9c9;
+    margin-top: 0;
+  }
+  footer .footer-social .footer-social-blog .guidbook a {
     margin-top: 0;
   }
   footer .footer-link {

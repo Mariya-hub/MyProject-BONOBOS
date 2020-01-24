@@ -347,7 +347,7 @@ body header .header-top-adapt {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #000;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   background-color: #fff;
   height: 50px;
@@ -619,6 +619,52 @@ body header .header-top-adapt .header-top-adaptSignIn .adaptBasket svg {
   height: 100%;
 }
 
+body header .header-top-mobile {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 10px;
+  background-color: #fff;
+  overflow: scroll;
+  overflow-y: hidden;
+  display: none;
+}
+
+body header .header-top-mobile div {
+  margin-left: 15px;
+}
+
+body header .header-top-mobile div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #232323;
+}
+
+body header .header-top-mobile div a img {
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+}
+
+body header .header-top-mobile div a span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
 body header .header-nav a:hover {
   text-decoration: underline;
 }
@@ -714,6 +760,14 @@ body header header:hover .header-nav a {
   }
   body header .header-nav, body header .header-top {
     display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  body header .header-top-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -895,7 +949,6 @@ body .carousel.slide .carousel1 section {
   font-family: 'Archivo Black', sans-serif;
   font-weight: 900;
   font-size: 40px;
-  line-height: 1.2;
   color: #fff;
   text-align: center;
 }
@@ -916,6 +969,15 @@ body .carousel.slide .carousel1 section div.btn a {
   color: #535252;
 }
 
+@media (max-width: 992px) {
+  body .carousel.slide .carousel-item.active.carousel1 section {
+    font-size: 25px;
+    top: 35%;
+    width: 60%;
+    padding-right: 28%;
+  }
+}
+
 body .carousel.slide .carousel3 .carousel3-content {
   position: absolute;
   text-align: center;
@@ -923,7 +985,6 @@ body .carousel.slide .carousel3 .carousel3-content {
   left: 30%;
   font-weight: 900;
   font-size: 40px;
-  line-height: 1.3;
   color: #fff;
   cursor: pointer;
 }
@@ -941,6 +1002,13 @@ body .carousel.slide .carousel3 .carousel3-content div a {
   background-color: #fff;
   padding: 15px 24px;
   color: #535252;
+}
+
+@media (max-width: 992px) {
+  body .carousel.slide .carousel3-content span {
+    font-size: 25px;
+    font-weight: 800;
+  }
 }
 
 body .carousel.slide .carousel-control-prev {
@@ -1087,6 +1155,59 @@ body .img-components .img-component3 div a {
   text-decoration: none;
 }
 
+@media (max-width: 992px) {
+  body .img-components {
+    margin-top: 39%;
+  }
+  body .img-components .img-component1 div a {
+    left: 23%;
+    top: 42%;
+  }
+}
+
+@media (max-width: 540px) {
+  body .img-components {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .img-components .img-component1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  body .img-components .img-component1 div {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  body .img-components .img-component1 div img {
+    min-height: 180px;
+    width: 100%;
+  }
+  body .img-components .img-component2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  body .img-components .img-component2 div {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  body .img-components .img-component2 div img {
+    min-height: 180px;
+    width: 100%;
+  }
+  body .img-components .img-component3 div a {
+    top: 35%;
+    left: 5%;
+  }
+}
+
 body .details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1122,6 +1243,19 @@ body .details .detail a {
   font-style: normal;
   font-size: 14px;
   line-height: 1.5;
+}
+
+@media (max-width: 540px) {
+  body .details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  body .details .detail {
+    width: 100%;
+  }
 }
 
 body footer {
@@ -1435,8 +1569,11 @@ body footer .footer-email form .form-group div small span a {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    padding: 0 0 24px;
+    padding: 0 0 60px;
     border-bottom: 1px solid #c9c9c9;
+    margin-top: 0;
+  }
+  body footer .footer-social .footer-social-blog .guidbook a {
     margin-top: 0;
   }
   body footer .footer-link {
