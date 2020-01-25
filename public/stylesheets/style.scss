@@ -1,7 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-
         header {
             display: flex;
             flex-direction: column; 
@@ -475,13 +474,13 @@ body {
                     position: relative;
                     z-index: 1;
                     display: flex;
-                    padding: 10px 10px;
+                    padding: 10px 5px;
                     background-color: #fff;
                     overflow: scroll;
                     overflow-y: hidden;
                     display: none;
                     div {
-                        margin-left: 15px;
+                        margin-left: 17px;
                         a {
                             display: flex;
                             flex-direction: column;
@@ -767,8 +766,85 @@ body {
                 a.carousel-control-next:focus + div.circle-slide-button  button.btnslider2 {
                     background: #707070;
                 }
+       
         }
-        
+        .carousel-adapt-mobile {
+            display: block;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            display: none;
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                
+            }
+            section {
+                position: absolute;
+                left: 25%;
+                top: 38%;
+                text-align: center;
+                div.carousel-text-mob {
+                    font-size: 24px;
+                    font-weight: 900;
+                    color: #fff;
+                }
+                div.btn {
+                    background-color: #fff;
+                    border-radius: 0;
+                    padding: 10px 24px;
+                    height: 48px;
+                    margin-top: 15px;
+                    a {
+                        color: #232323;
+                        font-weight: 700;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .circle-slide-button {
+                position: absolute;
+                margin-top: -50px;
+                margin-left: 20px;
+                .circle {
+                    justify-self: center;
+                    svg {
+                        height: 22px;
+                        position: absolute; 
+                        color: #fff;
+                        animation-duration: 3s;
+                        animation-name: circle;
+                        animation-iteration-count: infinite;
+                        animation-direction: alternate;
+                        animation-timing-function: ease-in-out;
+                    }
+                    @keyframes circle {
+                        from { margin-top: 0; }
+                        to { margin-top: 10px; }
+                    }
+                }
+                .explore {
+                    justify-self: start;
+                    align-self: center;
+                    color: #fff;
+                    margin-left: 30px;
+                    span {
+                        font-family: 'PT Sans Caption', sans-serif;
+                        font-size: 12px;
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+         @media (max-width: 540px) {
+            .carousel.slide {
+                display: none;
+            }
+            .carousel-adapt-mobile {
+                display: block;
+            }
+        }
         .img-components {
             margin-top: 40%;
             display: flex;
@@ -887,6 +963,7 @@ body {
     @media (max-width: 540px) {
         .img-components {
             flex-direction: column;
+            margin-top: 0;
             .img-component1 {
                 flex-direction: column;
                 width: 100%;
