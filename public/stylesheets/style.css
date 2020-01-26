@@ -206,6 +206,8 @@ body header .header-nav ul .header-nav-menu {
   margin-left: -581px;
   background-color: #fff;
   display: none;
+  -webkit-transition: height .3s,opacity .3s;
+  transition: height .3s,opacity .3s;
 }
 
 body header .header-nav ul .header-nav-menu .menu-a {
@@ -249,7 +251,7 @@ body header .header-nav ul .header-nav-menu .menu-img .imgtext span {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.38039);
 }
 
-body header .header-nav ul .menu1-a {
+body header .header-nav ul .header-nav-menu .menu1-a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,13 +264,13 @@ body header .header-nav ul .menu1-a {
   text-align: right;
 }
 
-body header .header-nav ul .menu1-a h3 {
+body header .header-nav ul .header-nav-menu .menu1-a h3 {
   font-weight: 700;
   font-size: 12px;
   color: #000;
 }
 
-body header .header-nav ul .menu1-a a {
+body header .header-nav ul .header-nav-menu .menu1-a a {
   margin: 8px 0;
   color: #000;
   font-style: normal;

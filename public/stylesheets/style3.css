@@ -644,7 +644,7 @@ body header .header-nav li.nv-new:hover > .header-nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #000;
+  background-color: white;
 }
 
 body header .header-nav .nv-clothing:hover > .header-nav-menu.alignblock1 {
